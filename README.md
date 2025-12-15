@@ -88,33 +88,6 @@ Após a primeira batalha, você terá acesso ao menu interativo:
 - Encerre o jogo
 - Lembre-se de salvar no Código
 
-```python
-# Criar um jogador
-player = Player("Seu Nome")
-
-# Capturar um Pokemon
-player.capturar(PokemonEletrico("Pikachu"))
-
-# Ver seus pokemons
-player.mostraPokemons()
-
-# Explorar o mundo
-player.explorar()
-
-# Batalhar contra um inimigo
-inimigo = Inimigo()  # Inimigo aleatório
-player.batalhar(inimigo)
-
-# Ver seu saldo
-player.mostrarDinheiro()
-
-# Salvar o jogo
-salvarJogo(player)
-
-# Carregar o jogo
-player = carregarJogo()
-```
-
 ## 🔧 Personalização do Código
 
 ### Modificar main.py:
@@ -170,9 +143,6 @@ Você pode modificar o arquivo `main.py` para:
 - Criar inimigos com Pokemon específicos
 - Ajustar valores de ganhos e perdas
 
-## 🤝 Contribuições
-
-Sinta-se livre para contribuir com melhorias, correções de bugs ou novas funcionalidades!
 
 ## Sobre o Projeto
 
