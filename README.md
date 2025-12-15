@@ -135,15 +135,6 @@ Após a primeira batalha, você terá acesso ao menu interativo:
 - Ekans (Venenoso)
 - Rhyhorn (Pedra)
 
-## 🔧 Personalizações
-
-Você pode modificar o arquivo `main.py` para:
-- Alterar o nome do jogador
-- Começar com Pokemon diferentes
-- Criar inimigos com Pokemon específicos
-- Ajustar valores de ganhos e perdas
-
-
 ## Sobre o Projeto
 
 Este projeto foi desenvolvido durante o curso **Python Orientado a Objetos e Automação**, ofertado pela **Solyd Offensive Security**.
