@@ -55,7 +55,12 @@ htmlcov/
 # Logs
 *.log
 
-# Databases
-*.db
+# Databases (Game Save Files)
+database.db
 *.sqlite
 *.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*~

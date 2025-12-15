@@ -87,7 +87,7 @@ class Player(Pessoa):
         self.dinheiro += quantia
         print("Você ganhou: {} PokeCoins".format(quantia))
         self.mostrarDinheiro()
-    
+
     def perderDinheiro(self, quantia):
         if self.dinheiro >= quantia:
             self.dinheiro -= quantia
@@ -121,14 +121,37 @@ class Player(Pessoa):
         else:
             print("Batalha não pode ser iniciada!")
 
+    def explorar(self):
+        if random.random() <= 0.3:
+            pokemon = random.choice(POKEMONS)
+            print("Um {} selvagem apareceu!!!".format(pokemon))
+
+            escolha = input("Deseja capturar este Pokemon? (S/N): ")
+            if escolha == "S":
+                if random.random() >= 0.45:
+                    self.capturar(pokemon)
+                else:
+                    print("{} escapou".format(pokemon))
+            else:
+                print("Continue sua exloração!")
+                
+
+            
+        else:
+            print("Nenhum Pokemon encontrado durante a exploração!!")
+
 
 class Inimigo(Pessoa):
     tipo = "Inimigo"
 
-    def __init__(self, nome=None, pokemons=[]):
+    def __init__(self, nome=None, pokemons=None):
 
         if not pokemons:
+            pokemonAleatório = []
             for i in range(random.randint(1, 6)):
-                pokemons.append(random.choice(POKEMONS))
+                pokemonAleatório.append(random.choice(POKEMONS))
 
-        super().__init__(nome=None, pokemons=pokemons)
+            super().__init__(nome=nome, pokemons=pokemonAleatório)
+        else:
+            super().__init__(nome=nome, pokemons=pokemons)
+
